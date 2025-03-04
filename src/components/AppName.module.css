@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.todoHeading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #FF6F61;  /* A vibrant coral color for the text */
+    margin: 10px;
+    margin-bottom: 20px;
+   /* Optional text shadow */
+    padding: 5px 10px;
+    letter-spacing: 1px;
+
+}

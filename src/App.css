@@ -1,0 +1,231 @@
+
+input{
+    width:100%;
+}
+
+.stylebutton{
+    min-width: 80px;
+}
+.stylerow{
+ margin: 10px 5px;
+}
+/*add to do */
+/* Container styles */
+.todo-container {
+    margin-top: 50px;
+    padding: 0 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Form styles */
+  .todo-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /* Input field styles */
+  .todo-input, .todo-date-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .todo-input:focus, .todo-date-input:focus {
+    border-color: #28a745;
+    outline: none;
+  }
+  
+  /* Button styles */
+  .todo-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #281386;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo-button:hover {
+    background-color: #218838;
+  }
+  
+  .todo-button:active {
+    background-color: #1e7e34;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .todo-form {
+      flex-direction: column;
+    }
+  
+    .col-12.col-md-6 {
+      max-width: 100%;
+    }
+  
+    .col-12.col-md-4 {
+      max-width: 100%;
+    }
+  
+    .col-12.col-md-2 {
+      max-width: 100%;
+    }
+  }
+  /*todoitems*/
+  /* Container styling for each ToDo Item */
+.todo-item-container {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* On hover, add a shadow effect for interaction */
+  .todo-item-container:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Row styling for the ToDo item */
+  .todo-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styling for ToDo name column */
+  .todo-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Styling for the date column */
+  .todo-date {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Button styling */
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+    transform: scale(1.1);
+  }
+  
+  .delete-button:focus {
+    outline: none;
+  }
+  
+  /* Add padding to the container for better spacing */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .col-6, .col-4, .col-2 {
+    padding: 5px 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .todo-item-container {
+      padding: 15px;
+    }
+  
+    .todo-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .col-6, .col-4, .col-2 {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .todo-name {
+      margin-bottom: 10px;
+    }
+  }
+  /* Styling for the ToDo Item Container */
+.container {
+    margin-bottom: 15px; /* Spacing between the items */
+    padding: 10px; /* Padding inside the container */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for the container */
+    background-color: #f9f9f9; /* Light background color for the item */
+  }
+  
+  /* Styling for each row inside the container */
+  .stylerow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Subtle border under each item */
+    padding: 10px 0; /* Spacing between rows */
+  }
+  
+  /* Styling for the ToDo Name */
+  .name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333; /* Dark color for the name */
+    text-transform: capitalize; /* Capitalize the first letter of each word */
+    padding-left: 10px;
+  }
+  
+  /* Styling for the ToDo Date */
+  .date {
+    font-size: 14px;
+    color: #888; /* Lighter color for the date */
+    font-style: italic;
+    text-align: center;
+    padding-right: 10px;
+  }
+  
+  /* Styling for the Delete Button */
+  .stylebutton {
+    font-size: 20px; /* Larger icon size */
+    padding: 8px 12px; /* Padding around the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease-in-out; /* Smooth background transition */
+  }
+  
+  .stylebutton:hover {
+    background-color: #ff4d4d; /* Darker red background on hover */
+  }
+  
+  /* Hover effect on the entire ToDo Item container */
+  .container:hover {
+    background-color: #f1f1f1; /* Slightly darker background on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow effect */
+  }
+  
